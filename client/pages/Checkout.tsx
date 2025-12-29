@@ -48,7 +48,7 @@ export default function Checkout() {
   const total = subtotal + tax + deliveryCharge;
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -276,7 +276,9 @@ export default function Checkout() {
                         onChange={handleInputChange}
                         className="w-4 h-4"
                       />
-                      <span className="ml-3 font-semibold">Credit/Debit Card</span>
+                      <span className="ml-3 font-semibold">
+                        Credit/Debit Card
+                      </span>
                     </label>
 
                     <label className="flex items-center p-3 border border-border rounded-lg cursor-pointer hover:bg-muted/50 transition-colors">

@@ -18,7 +18,8 @@ export default function About() {
           <div className="bg-muted/30 rounded-lg p-12 border-2 border-dashed border-primary/30">
             <h2 className="text-3xl font-bold mb-4">Page Under Construction</h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
-              The About page is coming soon! Tell me more about what you'd like to see here and I'll create it for you.
+              The About page is coming soon! Tell me more about what you'd like
+              to see here and I'll create it for you.
             </p>
             <Link
               to="/products"

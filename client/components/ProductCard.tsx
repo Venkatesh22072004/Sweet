@@ -58,9 +58,7 @@ export default function ProductCard({
               <span
                 key={i}
                 className={`text-lg ${
-                  i < Math.floor(rating)
-                    ? "text-yellow-400"
-                    : "text-gray-300"
+                  i < Math.floor(rating) ? "text-yellow-400" : "text-gray-300"
                 }`}
               >
                 ★

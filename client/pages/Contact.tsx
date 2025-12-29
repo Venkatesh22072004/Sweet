@@ -18,7 +18,8 @@ export default function Contact() {
           <div className="bg-muted/30 rounded-lg p-12 border-2 border-dashed border-primary/30">
             <h2 className="text-3xl font-bold mb-4">Page Under Construction</h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
-              The Contact page is coming soon! Tell me what you'd like to include (contact form, map, social links, etc.) and I'll build it.
+              The Contact page is coming soon! Tell me what you'd like to
+              include (contact form, map, social links, etc.) and I'll build it.
             </p>
             <Link
               to="/products"

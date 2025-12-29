@@ -31,12 +31,10 @@ export default function Products() {
       {/* Page Header */}
       <section className="bg-gradient-to-r from-primary to-secondary text-white py-12">
         <div className="container-wide px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Our Products
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Products</h1>
           <p className="text-lg text-white/90 max-w-2xl">
-            Browse our complete collection of authentic Indian bakery items,
-            all freshly baked daily.
+            Browse our complete collection of authentic Indian bakery items, all
+            freshly baked daily.
           </p>
         </div>
       </section>
@@ -143,10 +141,7 @@ export default function Products() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                   {filteredProducts.map((product) => (
                     <div key={product.id} className="relative">
-                      <ProductCard
-                        {...product}
-                        onAddToCart={handleAddToCart}
-                      />
+                      <ProductCard {...product} onAddToCart={handleAddToCart} />
                       {addedToCart === product.id && (
                         <div className="absolute inset-0 bg-black/50 rounded-lg flex items-center justify-center">
                           <span className="text-white font-semibold">

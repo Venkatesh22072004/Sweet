@@ -18,23 +18,28 @@ export default function Home() {
     {
       name: "Priya Sharma",
       role: "Food Blogger",
-      comment: "The most authentic Indian bakery experience! Every item is made with love.",
+      comment:
+        "The most authentic Indian bakery experience! Every item is made with love.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
     },
     {
       name: "Rajesh Kumar",
       role: "Regular Customer",
-      comment: "Best gulab jamun donuts I've ever tasted. A perfect blend of tradition and taste.",
+      comment:
+        "Best gulab jamun donuts I've ever tasted. A perfect blend of tradition and taste.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
     },
     {
       name: "Anjali Patel",
       role: "Event Organizer",
       comment: "Sweet Crumbs catered our wedding. All guests were amazed!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
     },
   ];
 
@@ -50,7 +55,9 @@ export default function Home() {
                 Sweet Crumbs: Where Tradition Meets Taste
               </h1>
               <p className="text-lg md:text-xl text-white/90">
-                Authentic Indian-style bakery items crafted with love, tradition, and the finest ingredients. From gulab jamun donuts to saffron cheesecakes, experience the perfect blend of flavors.
+                Authentic Indian-style bakery items crafted with love,
+                tradition, and the finest ingredients. From gulab jamun donuts
+                to saffron cheesecakes, experience the perfect blend of flavors.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -124,20 +131,20 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Our Bestsellers</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Discover our most loved creations that keep our customers coming back
+              Discover our most loved creations that keep our customers coming
+              back
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             {featuredProducts.map((product) => (
               <div key={product.id} className="relative">
-                <ProductCard
-                  {...product}
-                  onAddToCart={handleAddToCart}
-                />
+                <ProductCard {...product} onAddToCart={handleAddToCart} />
                 {addedToCart === product.id && (
                   <div className="absolute inset-0 bg-black/50 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-semibold">Added to Cart! ✓</span>
+                    <span className="text-white font-semibold">
+                      Added to Cart! ✓
+                    </span>
                   </div>
                 )}
               </div>
@@ -217,17 +224,24 @@ export default function Home() {
             <div className="space-y-6">
               <h2 className="text-4xl font-bold">About Sweet Crumbs</h2>
               <p className="text-lg text-muted-foreground">
-                Founded in 2019, Sweet Crumbs is a passion project celebrating Indian bakery traditions with a modern twist. We believe every bite should tell a story of tradition, quality, and love.
+                Founded in 2019, Sweet Crumbs is a passion project celebrating
+                Indian bakery traditions with a modern twist. We believe every
+                bite should tell a story of tradition, quality, and love.
               </p>
               <p className="text-lg text-muted-foreground">
-                Our master bakers have generations of experience crafting traditional Indian sweets and pastries. We use only the finest ingredients—from real saffron to quality butter—ensuring every product is authentic and delicious.
+                Our master bakers have generations of experience crafting
+                traditional Indian sweets and pastries. We use only the finest
+                ingredients—from real saffron to quality butter—ensuring every
+                product is authentic and delicious.
               </p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-white text-sm">✓</span>
                   </div>
-                  <span className="text-foreground">100+ Traditional Recipes</span>
+                  <span className="text-foreground">
+                    100+ Traditional Recipes
+                  </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -239,7 +253,9 @@ export default function Home() {
                   <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-white text-sm">✓</span>
                   </div>
-                  <span className="text-foreground">100% Natural Ingredients</span>
+                  <span className="text-foreground">
+                    100% Natural Ingredients
+                  </span>
                 </div>
               </div>
             </div>
@@ -250,9 +266,12 @@ export default function Home() {
       {/* CTA Section */}
       <section className="section-padding bg-gradient-to-r from-primary to-secondary text-white">
         <div className="container-wide text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Taste the Difference?</h2>
+          <h2 className="text-4xl font-bold mb-6">
+            Ready to Taste the Difference?
+          </h2>
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Experience the authentic flavors of Indian baking. Order now and get fresh delivery to your doorstep.
+            Experience the authentic flavors of Indian baking. Order now and get
+            fresh delivery to your doorstep.
           </p>
           <Link
             to="/products"

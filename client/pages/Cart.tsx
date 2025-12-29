@@ -17,14 +17,16 @@ export default function Cart() {
       name: "Mango Cake",
       price: 450,
       quantity: 1,
-      image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=100&h=100&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=100&h=100&fit=crop",
     },
     {
       id: "5",
       name: "Jaggery Brownie",
       price: 200,
       quantity: 2,
-      image: "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=100&h=100&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=100&h=100&fit=crop",
     },
   ]);
 
@@ -35,8 +37,8 @@ export default function Cart() {
     }
     setCartItems(
       cartItems.map((item) =>
-        item.id === id ? { ...item, quantity: newQuantity } : item
-      )
+        item.id === id ? { ...item, quantity: newQuantity } : item,
+      ),
     );
   };
 
@@ -46,7 +48,7 @@ export default function Cart() {
 
   const subtotal = cartItems.reduce(
     (sum, item) => sum + item.price * item.quantity,
-    0
+    0,
   );
   const tax = Math.round(subtotal * 0.05);
   const deliveryCharge = subtotal > 500 ? 0 : 50;
@@ -127,9 +129,7 @@ export default function Cart() {
                           <Trash2 className="w-5 h-5" />
                         </button>
                         <div className="text-right">
-                          <p className="text-sm text-muted-foreground">
-                            Total
-                          </p>
+                          <p className="text-sm text-muted-foreground">Total</p>
                           <p className="text-xl font-bold text-primary">
                             ₹{item.price * item.quantity}
                           </p>

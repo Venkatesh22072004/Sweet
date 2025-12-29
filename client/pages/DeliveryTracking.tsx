@@ -77,7 +77,9 @@ export default function DeliveryTracking() {
 
               {/* Status Timeline */}
               <div className="bg-white rounded-lg p-8 border border-border">
-                <h2 className="text-2xl font-bold mb-8">Order Status Timeline</h2>
+                <h2 className="text-2xl font-bold mb-8">
+                  Order Status Timeline
+                </h2>
 
                 <div className="space-y-6">
                   {statusStages.map((stage, index) => (
@@ -96,9 +98,7 @@ export default function DeliveryTracking() {
                         {index < statusStages.length - 1 && (
                           <div
                             className={`w-1 h-12 my-2 ${
-                              stage.completed
-                                ? "bg-primary"
-                                : "bg-muted"
+                              stage.completed ? "bg-primary" : "bg-muted"
                             }`}
                           />
                         )}
@@ -222,9 +222,7 @@ export default function DeliveryTracking() {
                     <p className="font-semibold text-foreground">
                       123 Main Street
                     </p>
-                    <p className="text-sm text-muted-foreground">
-                      Bandra West
-                    </p>
+                    <p className="text-sm text-muted-foreground">Bandra West</p>
                     <p className="text-sm text-muted-foreground">
                       Mumbai, Maharashtra 400050
                     </p>
@@ -238,9 +236,7 @@ export default function DeliveryTracking() {
 
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">
-                      Mango Cake x1
-                    </span>
+                    <span className="text-muted-foreground">Mango Cake x1</span>
                     <span className="font-semibold">₹450</span>
                   </div>
                   <div className="flex justify-between">

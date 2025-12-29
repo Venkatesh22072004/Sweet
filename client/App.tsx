@@ -34,15 +34,71 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout><Home /></Layout>} />
-          <Route path="/products" element={<Layout><Products /></Layout>} />
-          <Route path="/cart" element={<Layout><Cart /></Layout>} />
-          <Route path="/checkout" element={<Layout><Checkout /></Layout>} />
-          <Route path="/tracking/:orderId" element={<Layout><DeliveryTracking /></Layout>} />
-          <Route path="/about" element={<Layout><About /></Layout>} />
-          <Route path="/contact" element={<Layout><Contact /></Layout>} />
+          <Route
+            path="/"
+            element={
+              <Layout>
+                <Home />
+              </Layout>
+            }
+          />
+          <Route
+            path="/products"
+            element={
+              <Layout>
+                <Products />
+              </Layout>
+            }
+          />
+          <Route
+            path="/cart"
+            element={
+              <Layout>
+                <Cart />
+              </Layout>
+            }
+          />
+          <Route
+            path="/checkout"
+            element={
+              <Layout>
+                <Checkout />
+              </Layout>
+            }
+          />
+          <Route
+            path="/tracking/:orderId"
+            element={
+              <Layout>
+                <DeliveryTracking />
+              </Layout>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <Layout>
+                <About />
+              </Layout>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <Layout>
+                <Contact />
+              </Layout>
+            }
+          />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<Layout><NotFound /></Layout>} />
+          <Route
+            path="*"
+            element={
+              <Layout>
+                <NotFound />
+              </Layout>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

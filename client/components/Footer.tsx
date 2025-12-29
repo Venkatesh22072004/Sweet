@@ -1,5 +1,12 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Twitter, Phone, Mail, MapPin } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Twitter,
+  Phone,
+  Mail,
+  MapPin,
+} from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -24,22 +31,34 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-300 hover:text-primary transition-colors">
+                <Link
+                  to="/"
+                  className="text-gray-300 hover:text-primary transition-colors"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="text-gray-300 hover:text-primary transition-colors">
+                <Link
+                  to="/products"
+                  className="text-gray-300 hover:text-primary transition-colors"
+                >
                   Products
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-300 hover:text-primary transition-colors">
+                <Link
+                  to="/about"
+                  className="text-gray-300 hover:text-primary transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-300 hover:text-primary transition-colors">
+                <Link
+                  to="/contact"
+                  className="text-gray-300 hover:text-primary transition-colors"
+                >
                   Contact
                 </Link>
               </li>
